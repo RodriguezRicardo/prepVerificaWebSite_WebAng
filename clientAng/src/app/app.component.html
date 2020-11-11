@@ -1,0 +1,11 @@
+<h1>Negozio dei prodotti bellissimi</h1>
+<div>
+  <button type = "button" (click)="visuaLista()">clicca per vedere la lista dei prodotti bellissimi</button>
+  <ul *ngFor="let l of listaProd">
+    <li><p><b>nome prodotto: {{l.product_name}}</b></p></li>
+    <li><p>id: {{l._id | json }}</p></li>
+    <li><p>costo unitario {{l.unit_cost}}</p></li>
+    <li><p>fornitore: {{l.supplier}}</p></li>
+    <li><p>quantita: {{l.quantity}}</p></li>
+  </ul>
+</div>
